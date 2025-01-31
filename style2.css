@@ -12,7 +12,7 @@ body {
 
 /* Form Styling */
 form {
-    background: rgba(29, 91, 69, 0.918);
+    background: rgba(29, 29, 29, 0.95);
     max-width: 500px;
     width: 90%;
     padding: 25px;
@@ -27,7 +27,7 @@ form {
     width: 180px;
     height: auto;
     margin-bottom: -50px;
-    margin-top:-25px;
+    margin-top: -25px;
     border-radius: 25%; /* Circular Logo */
     text-shadow: 5px 5px 15px hsl(0, 0%, 0%);
 }
@@ -36,7 +36,7 @@ form {
 h1 {
     font-size: 32px;
     font-weight: bold;
-    color: #ffffff;
+    color: #ff7700;
     margin-bottom: 20px;
 }
 
@@ -44,7 +44,7 @@ h1 {
 .textbox {
     width: 80px;
     padding: 8px;
-    border: 2px solid #102b1c;
+    border: 2px solid #ff7700;
     border-radius: 35px;
     background: #f9fafb;
     text-align: center;
@@ -52,19 +52,19 @@ h1 {
     color: #333;
     transition: 0.3s ease-in-out;
     margin: 5px;
-    text-shadow:5px 5px 15px hsl(0, 0%, 100%);
+    text-shadow: 5px 5px 15px hsl(0, 0%, 100%);
 }
 
 .textbox:focus {
     background: #ffffff;
-    border-color: #277c5e;
+    border-color: #ff5500;
     outline: none;
 }
 
 /* Label Styling */
 label {
     font-weight: bold;
-    color: #ffffff;
+    color: #ff7700;
     font-size: 1.1em;
     display: inline-block;
     margin: 5px 0;
@@ -75,17 +75,16 @@ label {
     border-radius: 6px;
     background: #000000;
     padding: 15px;
-    color: white;
+    color: #ff7700;
     text-align: center;
     margin-bottom: 10px;
     box-shadow: 5px 5px 10px hsla(0, 0%, 0%, 0.474);
-
 }
 
 #screen1, #screen2, #screen3 {
     background: #000000;
     padding: 7px;
-    color: aliceblue;
+    color: #ff7700;
     border-radius: 8px;
     margin-bottom: 5px;
     margin-top: 5px;
@@ -96,15 +95,15 @@ label {
 #formation {
     width: 20px;
     height: 20px;
-    accent-color: #277c5e;
+    accent-color: #ff7700;
 }
 
 /* Button Styling */
 button {
     margin-top: 20px;
     padding: 12px 25px;
-    background: #3b3b3b;
-    color: aliceblue;
+    background: #ff7700;
+    color: black;
     font-size: 1.2em;
     border: none;
     border-radius: 25px;
@@ -113,7 +112,7 @@ button {
 }
 
 button:hover {
-    background: #282828;
+    background: #ff5500;
     transform: scale(1.05);
 }
 
@@ -136,8 +135,8 @@ button:hover {
     }
 }
 
-#credit{
-    color: #ffffff;
+#credit {
+    color: #ff7700;
     font-size: 0.65em;
     text-align: center;
     margin-top: 20px;
