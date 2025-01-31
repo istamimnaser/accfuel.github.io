@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Calculator</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css" integrity="sha512-i1b/nzkVo97VN5WbEtaPebBG8REvjWeqNclJ6AItj7msdVcaveKrlIIByDpvjk5nwHjXkIqGZscVxOrTb9tsMA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <form>
+       
+        <img src="logo.png" alt="Company Logo" class="logo">
+
+        <h1>FUEL CALCULATOR</h1>
+        <div id="screen">
+            <h2 id="screen1">WELCOME TO AGR!</h2>
+            <h2 id="screen2"></h2>
+            <h2 id="screen3"></h2>
+        </div>
+
+        <br>
+        <label for="laptimehr">Laptime: </label>
+        <input type="text" class="textbox" id="laptimehr" name="laptimehr" value="0">
+        <label>MIN</label>
+        <input type="text" class="textbox" id="laptimemin" name="laptimemin" value="0">
+        <label>SEC</label>
+        <br><br>
+
+        <label for="avgfuel">Fuel Per Lap: </label>
+        <input type="text" class="textbox" id="avgfuel" name="avgfuel" value="0">
+        <label>L</label>
+        <br><br>
+
+        <label for="totalhr">Race Time: </label>
+        <input type="text" class="textbox" id="totalhr" name="totalhr" value="0">
+        <label>HR</label>
+        <input type="text" class="textbox" id="totalmin" name="totalmin" value="0">
+        <label>MIN</label>
+        <br><br>
+
+        <label for="formation">Formation Lap</label>
+        <input type="checkbox" id="formation" name="formation">
+        <br><br>
+
+        <button id="submit">Calculate</button>
+        <p id="credit">Developed by: Tamim Mahrush Naser</p>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>

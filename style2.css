@@ -1,0 +1,144 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: url('bgforagr.jpg') center/cover fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Form Styling */
+form {
+    background: rgba(29, 91, 69, 0.918);
+    max-width: 500px;
+    width: 90%;
+    padding: 25px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px hsl(0, 0%, 0%);
+    text-align: center;
+}
+
+/* Logo Styling */
+.logo {
+    width: 180px;
+    height: auto;
+    margin-bottom: -50px;
+    margin-top:-25px;
+    border-radius: 25%; /* Circular Logo */
+    text-shadow: 5px 5px 15px hsl(0, 0%, 0%);
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Textbox Styling */
+.textbox {
+    width: 80px;
+    padding: 8px;
+    border: 2px solid #102b1c;
+    border-radius: 35px;
+    background: #f9fafb;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    transition: 0.3s ease-in-out;
+    margin: 5px;
+    text-shadow:5px 5px 15px hsl(0, 0%, 100%);
+}
+
+.textbox:focus {
+    background: #ffffff;
+    border-color: #277c5e;
+    outline: none;
+}
+
+/* Label Styling */
+label {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.1em;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+/* Screen Styling */
+#screen {
+    border-radius: 6px;
+    background: #000000;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 10px hsla(0, 0%, 0%, 0.474);
+
+}
+
+#screen1, #screen2, #screen3 {
+    background: #000000;
+    padding: 7px;
+    color: aliceblue;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+/* Checkbox Styling */
+#formation {
+    width: 20px;
+    height: 20px;
+    accent-color: #277c5e;
+}
+
+/* Button Styling */
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #3b3b3b;
+    color: aliceblue;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #282828;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .textbox {
+        width: 70px;
+        padding: 6px;
+        font-size: 14px;
+    }
+    
+    button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+
+#credit{
+    color: #ffffff;
+    font-size: 0.65em;
+    text-align: center;
+    margin-top: 20px;
+}
