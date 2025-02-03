@@ -13,6 +13,7 @@ body {
 form {
     background: rgba(29, 29, 29, 0.95);
     max-width: 500px;
+    max-height: 720;
     width: 90%;
     padding: 25px;
     margin: auto;
@@ -24,8 +25,9 @@ form {
     width: 260px;
     height: auto;
     margin-bottom: -80px;
-    margin-top: -25px;
-    border-radius: 25%
+    margin-top: -50px;
+    border-radius: 25%;
+
     text-shadow: 5px 5px 15px hsl(0, 0%, 0%);
 }
 h1 {
