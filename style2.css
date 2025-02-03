@@ -1,6 +1,7 @@
-/* General Styling */
+
+
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-family:    Georgia, 'Times New Roman', Times, serif ;
     background: url('bgforagr.jpg') center/cover fixed;
     margin: 0;
     padding: 0;
@@ -9,8 +10,6 @@ body {
     align-items: center;
     min-height: 100vh;
 }
-
-/* Form Styling */
 form {
     background: rgba(29, 29, 29, 0.95);
     max-width: 500px;
@@ -20,28 +19,24 @@ form {
     border-radius: 12px;
     box-shadow: 5px 5px 15px hsl(0, 0%, 0%);
     text-align: center;
+}
+.logo {
+    width: 260px;
+    height: auto;
+    margin-bottom: -80px;
+    margin-top: -25px;
+    border-radius: 25%
+    text-shadow: 5px 5px 15px hsl(0, 0%, 0%);
+}
+h1 {
+    font-size: 26px;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #ff6600;
+    margin-bottom: 20px;
     
 }
 
-/* Logo Styling */
-.logo {
-    width: 180px;
-    height: auto;
-    margin-bottom: -50px;
-    margin-top: -25px;
-    border-radius: 25%; /* Circular Logo */
-    text-shadow: 5px 5px 15px hsl(0, 0%, 0%);
-}
-
-/* Heading Styling */
-h1 {
-    font-size: 32px;
-    font-weight: bold;
-    color: #ff7700;
-    margin-bottom: 20px;
-}
-
-/* Textbox Styling */
 .textbox {
     width: 80px;
     padding: 8px;
@@ -62,7 +57,6 @@ h1 {
     outline: none;
 }
 
-/* Label Styling */
 label {
     font-weight: bold;
     color: #ff7700;
@@ -71,7 +65,6 @@ label {
     margin: 5px 0;
 }
 
-/* Screen Styling */
 #screen {
     border-radius: 6px;
     background: #000000;
@@ -83,23 +76,24 @@ label {
 }
 
 #screen1, #screen2, #screen3 {
+    font-family: Poppins;
     background: #000000;
     padding: 7px;
     color: #f89e50;
     border-radius: 8px;
     margin-bottom: 5px;
     margin-top: 5px;
-    text-align: left;
+    text-align: center;
 }
 
-/* Checkbox Styling */
+
 #formation {
     width: 20px;
     height: 20px;
     accent-color: #ff7700;
 }
 
-/* Button Styling */
+
 button {
     margin-top: 20px;
     padding: 12px 25px;
@@ -117,7 +111,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Responsive Design */
+
 @media (max-width: 600px) {
     form {
         width: 95%;
@@ -142,3 +136,4 @@ button:hover {
     text-align: center;
     margin-top: 20px;
 }
+
