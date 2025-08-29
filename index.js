@@ -18,27 +18,48 @@ let result;
 let safe_result;
 
 
-    caclbtn.addEventListener('click',(e)=>{
-       e.preventDefault();
-    avg_min      =   parseFloat(AvgLapHR.value)  + (parseFloat(AvgLapMIN.value)/60);
-    total_min    =(parseFloat(TotalTimeHR.value) * 60) +parseFloat(TotalTimeMIN.value);
-    fuel        =   parseFloat(FuelRate.value);
-    
-    if(formation.checked){
-        
-        lap = Math.ceil((total_min/avg_min))+1;
-    }
-    else{
-        lap = total_min/avg_min;
-    }
+   caclbtn.addEventListener('click', (e) => {
+    e.preventDefault();
 
-    result1 =Math.ceil(lap*fuel);
-    result2 = Math.ceil((( lap)*fuel)+Math.ceil(fuel));
-    
-    console.log(result1);
+    try {
+        avg_min   = parseFloat(AvgLapHR.value) + (parseFloat(AvgLapMIN.value) / 60);
+        total_min = (parseFloat(TotalTimeHR.value) * 60) + parseFloat(TotalTimeMIN.value);
+        fuel      = parseFloat(FuelRate.value);
 
-    screen1.textContent = `Minimum Fuel     : ${result1}L`;
-    screen2.textContent = `Recommmended Fuel: ${result2}L`;
-    screen3.textContent = `Number of Laps   : ${Math.ceil(lap)}`;
-    });
+        // check if any value is not a number
+       
+
+        // ✅ Only runs if inputs are valid
+        if (formation.checked) {
+            lap = Math.ceil(total_min / avg_min) + 1;
+        } else {
+            lap = total_min / avg_min;
+        }
+       
+
+        result1 = Math.ceil(lap * fuel);
+        result2 = Math.ceil((lap * fuel) + Math.ceil(fuel));
+
+          if (isNaN(avg_min) || isNaN(total_min) || isNaN(fuel)|| isNaN(lap)|| isNaN(result1)|| isNaN(result2)) {
+            throw new Error("Invalid input");
+        }
+
+        screen1.textContent = `Minimum Fuel     : ${result1}L`;
+        screen2.textContent = `Recommmended Fuel: ${result2}L`;
+        screen3.textContent = `Number of Laps   : ${Math.ceil(lap)}`;
+        screen1.classList.add("show");
+        screen2.classList.add("show");
+        screen3.classList.add("show");
+    } 
+    catch (err) {
+       
+        screen1.textContent = ``;
+        screen2.textContent = `PLEASE FILL ALL THE BOXES`;
+        screen3.textContent = ``;
+        screen1.classList.add("show");
+        screen2.classList.add("show");
+        screen3.classList.add("show");
+    }
+});
+
 
